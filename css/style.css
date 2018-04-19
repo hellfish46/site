@@ -5,4 +5,7 @@ h1 {
 h2{
 	font: 16px serif;
 	color: green;
+	border: 2px solid red;
+	padding: 20px;
+	width: 20%;
 }

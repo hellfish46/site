@@ -12,11 +12,33 @@
 <body>
 <h1>Git урок</h1>
 <h2>новое изменение файла</h2>
-
+<h3>hello !</h3>
 
 
 <a href='#'>click here</a>
-
+<script>
+	//var h = document.body.querySelector('h1');
+	//if(h.addEventListener) alert(h.addEventListener);
+	
+	var h = document.body.querySelector('h2');
+	var figure = 1.1;
+	h.onwheel = function(e){
+	var delta = e.deltaY;
+	
+	
+	if(delta < 0) {	
+	 figure = figure + 0.1;	
+	 this.style.transform = 'scale('+ figure +')';	 
+	  
+	}
+	if(delta > 0){		
+	 figure = figure - 0.1;
+	 this.style.transform = 'scale('+ figure +')';	 
+	 	 
+	}
+	
+	}
+</script>
 </body>
 
 
